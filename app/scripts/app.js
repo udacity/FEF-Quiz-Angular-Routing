@@ -18,32 +18,18 @@ angular
         url: '/',
         templateUrl: 'views/instructions.html'
       })
-      .state('redBrick', {
-        url: '/bricks/red',
+      .state('brick', {
+        url: '/bricks/:color',
         templateUrl: 'views/bricks.html',
-        controller: 'RedBricksCtrl as brick'
+        controllerProvider: function($stateParams) {
+          var color = $stateParams.color;
+          color = color[0].toUpperCase() + color.slice(1);
+          var ctrlName = color + 'BricksCtrl';
+          return ctrlName;
+        },
+        controllerAs: 'brick'
       })
-      .state('redBrick.cart', {
-        url: '/cart',
-        templateUrl: 'views/cart.html',
-        controller: 'CartCtrl as cart'
-      })
-      .state('blueBrick', {
-        url: '/bricks/blue',
-        templateUrl: 'views/bricks.html',
-        controller: 'BlueBricksCtrl as brick'
-      })
-      .state('blueBrick.cart', {
-        url: '/cart',
-        templateUrl: 'views/cart.html',
-        controller: 'CartCtrl as cart'
-      })
-      .state('greenBrick', {
-        url: '/bricks/green',
-        templateUrl: 'views/bricks.html',
-        controller: 'GreenBricksCtrl as brick'
-      })
-      .state('greenBrick.cart', {
+      .state('brick.cart', {
         url: '/cart',
         templateUrl: 'views/cart.html',
         controller: 'CartCtrl as cart'
