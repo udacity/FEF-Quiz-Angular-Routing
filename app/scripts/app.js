@@ -9,4 +9,4 @@
  * Main module of the application.
  */
 angular
-  .module('routingQuizApp', []);
+  .module('routingQuizApp', ['ui.router']);
