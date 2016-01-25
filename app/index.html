@@ -48,12 +48,7 @@
   </div>
 
   <div class="container">
-    <div ng-include="'views/instructions.html'"></div>
-
-    <div ng-include="'views/bricks.html'" ng-controller="RedBricksCtrl as brick"></div>
-    <div ng-include="'views/bricks.html'" ng-controller="BlueBricksCtrl as brick"></div>
-    <div ng-include="'views/bricks.html'" ng-controller="GreenBricksCtrl as brick"></div>
-    <div ng-include="'views/cart.html'" ng-controller="CartCtrl as cart"></div>
+    <div ui-view></div>
   </div>
 
   <div class="footer">
