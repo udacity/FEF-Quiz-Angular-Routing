@@ -1,0 +1,9 @@
+<h2>Cart</h2>
+<ul>
+  <li ng-repeat="item in cart.info.contents">
+    {{item.count}} {{item.color}} {{item.size}}
+  </li>
+</ul>
+<p>
+  Total: {{cart.info.total}}
+</p>

@@ -1,0 +1,67 @@
+[{
+  "name": "Routing Quiz",
+  "code": "OnTheRoadToGreatness",
+  "tests": [
+    {
+      "description": "ui-router is added as a dependency to the project",
+      "definition": {
+        "waitForEvent": "app-requires-ui-router",
+        "exists": true
+      }
+    },
+    {
+      "description": "The `Home` nav link exists",
+      "definition": {
+        "nodes": "#homeLink",
+        "attribute": "id",
+        "exists": true
+      }
+    },
+    {
+      "description": "The `Red` nav link exists",
+      "definition": {
+        "nodes": "#redBrickLink",
+        "attribute": "id",
+        "exists": true
+      }
+    },
+    {
+      "description": "The `Blue` nav link exists",
+      "definition": {
+        "nodes": "#blueBrickLink",
+        "attribute": "id",
+        "exists": true
+      }
+    },
+    {
+      "description": "The `Green` nav link exists",
+      "definition": {
+        "nodes": "#greenBrickLink",
+        "attribute": "id",
+        "exists": true
+      }
+    },
+    {
+      "description": "The `Cart` nav link exists",
+      "definition": {
+        "nodes": "#cartLink",
+        "attribute": "id",
+        "exists": true
+      }
+    },
+    {
+      "description": "Can navigate to a brick page",
+      "definition": {
+        "waitForEvent": "navigate-to-brick-page",
+        "exists": true
+      }
+    },
+    {
+      "description": "Can see cart on page",
+      "definition": {
+        "waitForEvent": "cart-on-subpage",
+        "exists": true
+      }
+    }
+  ]
+}]
