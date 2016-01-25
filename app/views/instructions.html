@@ -7,5 +7,24 @@
   <h2>Instructions</h2>
   <ul>
     <li>add <a href="https://github.com/angular-ui/ui-router">ui-router</a> to the project</li>
+    <li>setup app to have the following URL state:
+      <ul>
+        <li><code>/</code> (default state) loads the instructions</li>
+        <li><code>/bricks/red</code> loads the red bricks template</li>
+        <li><code>/bricks/blue</code> loads the blue bricks template</li>
+        <li><code>/bricks/green</code> loads the green bricks template</li>
+        <li><code>/cart</code> loads the cart template</li>
+      </ul>
+    </li>
+    <li>add the following links to the nav:
+      <ul>
+        <li>Home (<code>/</code>) with ID <code>homeLink</code></li>
+        <li>Red (<code>/bricks/red</code>) with ID <code>redBrickLink</code></li>
+        <li>Blue (<code>/bricks/blue</code>) with ID <code>blueBrickLink</code></li>
+        <li>Green (<code>/bricks/green</code>) with ID <code>greenBrickLink</code></li>
+        <li>Cart (<code>/cart</code>) with ID <code>cartLink</code></li>
+      </ul>
+    </li>
+    <li>add a nested state to each brick that loads the cart template (e.g. <code>/bricks/red/cart</code>)</li>
   </ul>
 </div>
