@@ -23,15 +23,30 @@ angular
         templateUrl: 'views/bricks.html',
         controller: 'RedBricksCtrl as brick'
       })
+      .state('redBrick.cart', {
+        url: '/cart',
+        templateUrl: 'views/cart.html',
+        controller: 'CartCtrl as cart'
+      })
       .state('blueBrick', {
         url: '/bricks/blue',
         templateUrl: 'views/bricks.html',
         controller: 'BlueBricksCtrl as brick'
       })
+      .state('blueBrick.cart', {
+        url: '/cart',
+        templateUrl: 'views/cart.html',
+        controller: 'CartCtrl as cart'
+      })
       .state('greenBrick', {
         url: '/bricks/green',
         templateUrl: 'views/bricks.html',
         controller: 'GreenBricksCtrl as brick'
+      })
+      .state('greenBrick.cart', {
+        url: '/cart',
+        templateUrl: 'views/cart.html',
+        controller: 'CartCtrl as cart'
       })
       .state('cart', {
         url: '/cart',
